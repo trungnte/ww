@@ -77,9 +77,9 @@ class RawSensor: public BaseAnalogSensor
                 }
                 _avgValue = sum/_numSample;
 
-                // Serial.print("ADC: ");
-                Serial.print(_avgValue);
-                Serial.print(" ");
+                // // Serial.print("ADC: ");
+                // Serial.print(_avgValue);
+                // Serial.print(" ");
             }
             _prevTime2Read = now;
 
@@ -111,4 +111,4 @@ class RawSensor: public BaseAnalogSensor
     uint8_t _ledState = 0;
 };
 
-RawSensor RainSensor;
+RawSensor RainSensor, UserMode, SpeedSensor;

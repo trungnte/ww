@@ -25,6 +25,6 @@ class RawSensor
     unsigned long _prevTime2Read;
 };
 
-extern RawSensor RainSensor;
+extern RawSensor RainSensor, UserMode, SpeedSensor;
 
 #endif //_WW_RAW_SENSOR_H__
